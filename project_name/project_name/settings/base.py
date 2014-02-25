@@ -190,6 +190,7 @@ DJANGO_APPS = (
     # Admin panel and documentation:
     'django.contrib.admin',
     # 'django.contrib.admindocs',
+    'django_jenkins',
 )
 
 # Apps specific for this project go here.
@@ -245,7 +246,6 @@ WSGI_APPLICATION = '%s.wsgi.application' % SITE_NAME
 INSTALLED_APPS += (
     # Database migration helpers:
     'south',
-    'django_jenkins',
 )
 # Don't need to use South when setting up a test database.
 SOUTH_TESTS_MIGRATE = False
